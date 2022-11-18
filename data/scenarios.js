@@ -2,20 +2,46 @@ module.exports = {
     scenarios: [
         {
             input: {
-                'roomSize' : [5, 5],
-                'coords' : [1, 2],
-                'patches' : [
-                  [1, 0],
-                  [2, 2],
-                  [2, 3]
+                "roomSize" : [5, 5],
+                "coords" : [3, 0],
+                "patches" : [
+                  [4, 0],
+                  [4, 1],
+                  [4, 2],
+                  [4, 3]
                 ],
-                'instructions' : 'NNESEESWNWW'
+                "instructions" : "ENNNNSSSSW"
             },
             output: {
-                "coords" : [1, 3],
-                "patches" : 1
+                "coords" : [3, 0],
+                "patches" : 5
             }
-        }
+        },
+
+        {
+            input: {
+                "roomSize" : [5, 5],
+                "coords" : [0, 0],
+                "patches" : [],
+                "instructions" : ""
+            },
+            output: {
+                "coords" : [0, 0],
+                "patches" : 0
+            }
+        },
+
+        {
+            input: {
+                "roomSize" : [4, 4],
+                "coords" : [1, 1],
+                "patches" : [],
+                "instructions" : "NS"
+            },
+            output: {
+                "coords" : [1, 1],
+                "patches" : 0
+            }
+        },
     ]
 }
-
