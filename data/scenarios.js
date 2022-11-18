@@ -17,7 +17,6 @@ module.exports = {
                 "patches" : 5
             }
         },
-
         {
             input: {
                 "roomSize" : [5, 5],
@@ -30,7 +29,6 @@ module.exports = {
                 "patches" : 0
             }
         },
-
         {
             input: {
                 "roomSize" : [2, 2],
@@ -45,7 +43,6 @@ module.exports = {
                 "patches" : 0
             }
         },
-
         {
             input: {
                 "roomSize" : [1, 1],
@@ -58,7 +55,6 @@ module.exports = {
                 "patches" : 0
             }
         },
-
         {
             input: {
                 "roomSize" : [3, 3],
@@ -75,7 +71,6 @@ module.exports = {
                 "patches" : 3
             }
         },
-
         {
             input: {
                 "roomSize" : [3, 3],
@@ -91,7 +86,6 @@ module.exports = {
                 "patches" : 0
             }
         },
-
         {
             input: {
                 "roomSize" : [3, 3],
@@ -105,6 +99,49 @@ module.exports = {
             output: {
                 "coords" : [0, 2],
                 "patches" : 2
+            }
+        },
+        {
+            input: {
+                "roomSize" : [3, 3],
+                "coords" : [0, 0],
+                "patches" : [
+                    [0, 1],
+                    [0, 2],
+                    [1, 2]
+                ],
+                "instructions" : "NNE"
+            },
+            output: {
+                "coords" : [1, 2],
+                "patches" : 3
+            }
+        },
+        {
+            input: {
+                "roomSize" : [2, 2],
+                "coords" : [1, 1],
+                "patches" : [],
+                "instructions" : ""
+            },
+            output: {
+                "coords" : [1, 1],
+                "patches" : 0
+            }
+        },
+        {
+            input: {
+                "roomSize" : [2, 2],
+                "coords" : [1, 1],
+                "patches" : [
+                    [1, 0],
+                    [0, 0]
+                ],
+                "instructions" : "S"
+            },
+            output: {
+                "coords" : [1, 0],
+                "patches" : 1
             }
         },
     ]
