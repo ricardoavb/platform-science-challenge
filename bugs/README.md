@@ -7,12 +7,8 @@ Glossary:
 
 ### Bug 1
 
-[ ] [E] [ ] [ ]\
-[ ] [ ] [ ] [ ]\
-[ ] [R] [ ] [ ]\
-[ ] [ ] [ ] [ ]\
-
-
+input:
+- room size: [4, 4]
 - instructions: "NN"
 - patches: []
 
