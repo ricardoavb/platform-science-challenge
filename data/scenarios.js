@@ -33,21 +33,6 @@ module.exports = {
 
         {
             input: {
-                "roomSize" : [2, 3],
-                "coords" : [1, 1],
-                "patches" : [
-                    [0, 0]
-                ],
-                "instructions" : "WS"
-            },
-            output: {
-                "coords" : [0, 0],
-                "patches" : 1
-            }
-        },
-
-        {
-            input: {
                 "roomSize" : [2, 2],
                 "coords" : [0, 0],
                 "patches" : [
