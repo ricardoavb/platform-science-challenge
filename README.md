@@ -21,4 +21,7 @@ npm run test
 npm run "test:report"
 ```
 
-the correspoding report will be created under de **output** directory
+the correspoding report will be created under the **output** directory
+
+
+4. You can find all the documentation related to the bugs under the **bugs** directory
