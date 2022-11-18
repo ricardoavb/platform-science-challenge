@@ -16,8 +16,9 @@ npm run test
 ```
 
 2. Run the tests and generate a report
-the correspoding report will be created under de **output** directory
 
 ```bash
 npm run "test:report"
 ```
+
+the correspoding report will be created under de **output** directory
