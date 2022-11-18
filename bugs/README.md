@@ -97,14 +97,3 @@ Actual output:
 
 
 **The service returns all the "positions" the robot hoovered on, it does not matter if they were dirt or not, according to the requirements this is not the expected behavior**
-
-
-Example:
-
-- R -> Robot initial position
-- P -> Patch of dirt
-- C -> Cleaned
-
-|C|C|P|
-|C|C|C|
-|R|C|C|
