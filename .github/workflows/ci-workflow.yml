@@ -7,7 +7,7 @@ on:
   push:
 
 jobs:
-  test:
+  linter:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -15,6 +15,6 @@ jobs:
       with:
         node-version: 16
     - name: Install dependencies
-      run: npm install
-    - name: Run tests
-      run: npm run test
+      run: npm install --only=dev
+    - name: Run linter
+      run: npm run linter
