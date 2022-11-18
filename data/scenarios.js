@@ -43,5 +43,18 @@ module.exports = {
                 "patches" : 0
             }
         },
+
+        {
+            input: {
+                "roomSize" : [4, 4],
+                "coords" : [1, 1],
+                "patches" : [],
+                "instructions" : "NS"
+            },
+            output: {
+                "coords" : [1, 1],
+                "patches" : 0
+            }
+        },
     ]
 }

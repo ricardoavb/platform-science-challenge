@@ -4,7 +4,7 @@ Feature('robot');
 
 scenarios.forEach((scenario, index) => {
     const testId = index + 1
-    Scenario(`Test ${testId} - cleaning sessions`, ({ I }) => {
+    Scenario(`Scenario ${testId} - cleaning sessions`, ({ I }) => {
         I.sendPostRequest('/cleaning-sessions', scenario.input);
         I.seeResponseCodeIs(200);
         I.seeResponseContainsKeys(['coords', 'patches']);
