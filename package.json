@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "linter": "npx eslint .",
+    "test": "npx codeceptjs run",
+    "test:report": "npx codeceptjs run --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "codeceptjs": "^3.3.6"
+    "codeceptjs": "^3.3.6",
+    "eslint": "^8.27.0",
+    "eslint-plugin-codeceptjs": "^1.3.0",
+    "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
   }
 }
