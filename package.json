@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "linter": "npx eslint tests data",
     "test": "npx codeceptjs run",
     "test:report": "npx codeceptjs run --reporter mochawesome"
   },
@@ -12,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "codeceptjs": "^3.3.6",
+    "eslint": "^8.27.0",
+    "eslint-plugin-codeceptjs": "^1.3.0",
     "mocha": "^10.1.0"
   },
   "dependencies": {
