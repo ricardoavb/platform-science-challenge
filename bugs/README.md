@@ -52,3 +52,20 @@ Expected output:
 Actual output:
   - coords: [0, 0]
   - patches: 0
+
+
+### Bug 4 - N X M room
+
+input:
+- room size: [2, 3]
+- coords: [1, 1]
+- instructions: "SW"
+- patches: [0, 0]
+
+Expected output:
+  - coords: [0, 0]
+  - patches: 1
+
+Actual output:
+  - coords: [0, 0]
+  - patches: 2
