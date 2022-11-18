@@ -2,7 +2,7 @@
 
 ### Bug 1
 
-When moving two steps towards the NORTH and then two steps towards the SOUTH, we get one(1) patch of dirt even when passing an empty array of patches. 
+When moving two steps towards the NORTH and then two steps towards the SOUTH, we get one patch of dirt even when passing an empty array of patches. 
 
 input:
 - room size: [4, 4]
@@ -89,7 +89,6 @@ Actual output:
 
 
 ## Root cause
-
 
 - Navigation system works properly, we do not have any issue related to the robot´s final position
 - Room limits work properly, the robot skids in place as expected
