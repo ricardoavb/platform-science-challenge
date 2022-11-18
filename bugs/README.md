@@ -20,7 +20,7 @@ Actual output:
 
 ### Bug 2
 
-When moving one step towards the SOUTH and then one step towards the NORTH, we get one(1) patch of dirt even when passing an empty array of patches. 
+When moving one step towards the SOUTH and then one step towards the NORTH, we get one patch of dirt cleaned even when passing an empty array of patches. 
 
 input:
 - room size: [4, 4]
