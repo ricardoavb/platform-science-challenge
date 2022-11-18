@@ -7,12 +7,17 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './*_test.js',
+  tests: './tests/*_test.js',
   output: './output',
   helpers: {
     REST: {
-      endpoint: ' https://pokeapi.co/api/v2'
-    }
+      endpoint: 'http://localhost:8080/v1',
+      defaultHeaders: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+    },
+    JSONResponse: {}
   },
   include: {
     I: './steps_file.js'
