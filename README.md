@@ -1,6 +1,6 @@
 # Platform science - challenge
 
-CodeceptJS test - REST API
+CodeceptJS tests - REST API
 
 ## How to run the project
 
@@ -15,7 +15,7 @@ npm install
 npm run test
 ```
 
-2. Run the tests and generate a report
+3. Run the tests and generate a report
 
 ```bash
 npm run "test:report"
