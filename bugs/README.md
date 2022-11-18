@@ -69,3 +69,42 @@ Expected output:
 Actual output:
   - coords: [0, 0]
   - patches: 2
+
+
+### Bug 5 - basic scenario
+
+input:
+- room size: [2, 2]
+- coords: [1, 1]
+- instructions: "WSE"
+- patches: [0, 0]
+
+Expected output:
+  - coords: [0, 0]
+  - patches: 1
+
+Actual output:
+  - coords: [0, 0]
+  - patches: 3
+
+
+## Root cause
+
+
+- Navigation system works properly, we do not have any issue related to the robot´s final position
+- Room limits work properly, the robot skids in place as expected
+- The system issue root cause could be the following:
+
+
+**The service returns all the "positions" the robot hoovered on, it does not matter if they were dirt or not, according to the requirements this is not the expected behavior**
+
+
+Example:
+
+- R -> Robot initial position
+- P -> Patch of dirt
+
+|-|-|P|
+|-|-|-|
+|R|-|-|
+
