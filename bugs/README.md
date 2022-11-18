@@ -1,6 +1,6 @@
 # Bugs
 
-### Bug 1 - NNS movement
+### Bug 1
 
 When moving two steps towards the NORTH and then two steps towards the SOUTH, we get one(1) patch of dirt even when passing an empty array of patches. 
 
@@ -18,7 +18,7 @@ Actual output:
   - coords: [0, 0]
   - patches: 1
 
-### Bug 2 - room limits
+### Bug 2
 
 When moving one step towards the SOUTH and then one step towards the NORTH, we get one(1) patch of dirt even when passing an empty array of patches. 
 
