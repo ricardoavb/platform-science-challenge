@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "linter": "npx eslint tests data",
+    "linter": "npx eslint .",
     "test": "npx codeceptjs run",
     "test:report": "npx codeceptjs run --reporter mochawesome"
   },
