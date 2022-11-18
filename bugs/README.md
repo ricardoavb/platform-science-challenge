@@ -103,8 +103,8 @@ Example:
 
 - R -> Robot initial position
 - P -> Patch of dirt
+- C -> Cleaned
 
-|-|-|P|
-|-|-|-|
-|R|-|-|
-
+|C|C|P|
+|C|C|C|
+|R|C|C|
