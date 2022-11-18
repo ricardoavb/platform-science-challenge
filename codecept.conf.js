@@ -9,6 +9,11 @@ setCommonPlugins();
 exports.config = {
   tests: './tests/*_test.js',
   output: './output',
+  mocha: {
+    "reporterOptions": {
+        "reportDir": "output"
+    }
+  },
   helpers: {
     REST: {
       endpoint: 'http://localhost:8080/v1',

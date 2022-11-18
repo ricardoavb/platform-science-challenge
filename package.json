@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "npx codeceptjs run",
-    "test:report": "npx codeceptjs run --reporter xunit"
+    "test:report": "npx codeceptjs run --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "codeceptjs": "^3.3.6"
+    "codeceptjs": "^3.3.6",
+    "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
   }
 }
