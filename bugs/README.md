@@ -80,11 +80,11 @@ input:
 - patches: [0, 0]
 
 Expected output:
-  - coords: [0, 0]
+  - coords: [1, 0]
   - patches: 1
 
 Actual output:
-  - coords: [0, 0]
+  - coords: [1, 0]
   - patches: 3
 
 
